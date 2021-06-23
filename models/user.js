@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
 		 * The `models/index` file will call this method automatically.
 		 */
 		static associate(models) {
-			// define association here
+			user.belongsTo(models.project);
 		}
 	}
 	user.init(
@@ -16,7 +16,11 @@ module.exports = (sequelize, DataTypes) => {
 			name: { type: DataTypes.STRING, allowNull: false },
 			email: { type: DataTypes.STRING, allowNull: false, unique: true },
 			password: { type: DataTypes.STRING, allowNull: false },
-			isManager: { type: DataTypes.BOOLEAN, defaultValue: false },
+			isManager: {
+				type: DataTypes.BOOLEAN,
+				defaultValue: flase,
+			},
+			projectId: { type: DataTypes.INTEGER },
 		},
 		{
 			sequelize,
