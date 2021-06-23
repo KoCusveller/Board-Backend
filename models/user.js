@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
 			password: { type: DataTypes.STRING, allowNull: false },
 			isManager: {
 				type: DataTypes.BOOLEAN,
-				defaultValue: flase,
+				defaultValue: false,
 			},
 			projectId: { type: DataTypes.INTEGER },
 		},

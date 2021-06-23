@@ -18,7 +18,6 @@ module.exports = (sequelize, DataTypes) => {
 			imgUrl: DataTypes.STRING,
 			posLeft: DataTypes.INTEGER,
 			posTop: DataTypes.INTEGER,
-			index: { type: DataTypes.INTEGER, autoIncrement: true },
 			projectId: DataTypes.INTEGER,
 		},
 		{
