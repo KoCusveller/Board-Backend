@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
 	pebble.init(
 		{
 			title: DataTypes.STRING,
-			text: DataTypes.STRING,
+			text: DataTypes.TEXT,
 			imgUrl: DataTypes.STRING,
 			posLeft: DataTypes.INTEGER,
 			posTop: DataTypes.INTEGER,
