@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 		 */
 		static associate(models) {
 			project.hasMany(models.pebble);
+			project.hasMany(models.user);
 		}
 	}
 	project.init(

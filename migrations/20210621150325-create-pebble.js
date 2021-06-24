@@ -23,10 +23,6 @@ module.exports = {
 			posTop: {
 				type: Sequelize.INTEGER,
 			},
-			index: {
-				type: Sequelize.INTEGER,
-				autoIncrement: true,
-			},
 			projectId: {
 				type: Sequelize.INTEGER,
 				references: {
