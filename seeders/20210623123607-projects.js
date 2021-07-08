@@ -6,19 +6,19 @@ module.exports = {
 			"projects",
 			[
 				{
-					name: "Burly Heads",
+					name: "Game Changer",
 					bgImgUrl: "https://i.imgur.com/saPeTM8.jpeg",
 					createdAt: new Date(),
 					updatedAt: new Date(),
 				},
 				{
-					name: "Zandvoort",
+					name: "RE:DEVELOPMENT",
 					bgImgUrl: "https://i.imgur.com/JrM5OTz.jpeg",
 					createdAt: new Date(),
 					updatedAt: new Date(),
 				},
 				{
-					name: "Puerto Chicama",
+					name: "Codaisseur",
 					bgImgUrl: "https://i.imgur.com/LwNmJyT.jpeg",
 					createdAt: new Date(),
 					updatedAt: new Date(),
