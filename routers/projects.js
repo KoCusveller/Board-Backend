@@ -8,4 +8,13 @@ router.get("/", async (req, res) => {
 	res.status(200).send({ message: "ok", projects });
 });
 
+router.get("/:id", async (req, res) => {
+	try {
+		const projectName = await Project.findByPk(req.params.id);
+		res.status(200).send({ message: "ok", projectName });
+	} catch (error) {
+		send(error);
+	}
+});
+
 module.exports = router;
