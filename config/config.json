@@ -10,7 +10,7 @@
 		"dialect": "mysql"
 	},
 	"production": {
-		"use_env_variable": "DATABASE_URL",
+		"url": "postgres://fxvvsrif:sHrk11AAU0bg32bkxc8bJllxOJHyb-Zj@hattie.db.elephantsql.com/fxvvsrif",
 		"dialectOptions": {
 			"ssl": {
 				"rejectUnauthorized": false
